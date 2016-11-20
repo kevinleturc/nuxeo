@@ -4689,6 +4689,12 @@
       </dependency>
 
       <dependency>
+        <groupId>com.couchbase.client</groupId>
+        <artifactId>java-client</artifactId>
+        <version>2.3.5</version>
+      </dependency>
+
+      <dependency>
         <groupId>com.marklogic</groupId>
         <artifactId>marklogic-xcc</artifactId>
         <version>8.0.5</version>
@@ -6441,6 +6447,13 @@
        <properties>
         <nuxeo.test.core>mongodb</nuxeo.test.core>
         <nuxeo.mongodb.server.default>localhost:27017</nuxeo.mongodb.server.default>
+      </properties>
+    </profile>
+    <profile>
+      <id>couchbase</id>
+       <properties>
+        <nuxeo.test.core>couchbase</nuxeo.test.core>
+        <nuxeo.test.couchbase.server>127.0.0.1</nuxeo.test.couchbase.server>
       </properties>
     </profile>
     <profile>

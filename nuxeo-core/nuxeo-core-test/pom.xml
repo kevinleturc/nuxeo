@@ -204,6 +204,22 @@
       </dependencyManagement>
     </profile>
     <profile>
+      <id>couchbase</id>
+      <dependencies>
+        <dependency>
+          <groupId>org.nuxeo.ecm.core</groupId>
+          <artifactId>nuxeo-core-storage-couchbase</artifactId>
+          <scope>test</scope>
+        </dependency>
+        <dependency>
+          <groupId>org.nuxeo.ecm.core</groupId>
+          <artifactId>nuxeo-core-storage-couchbase</artifactId>
+          <type>test-jar</type>
+          <scope>test</scope>
+        </dependency>
+      </dependencies>
+    </profile>
+    <profile>
       <!-- This profile is used to build and load marklogic connector as backend for whole Platform tests -->
       <!-- See StorageConfiguration#initExternal for instantiation by reflection -->
       <id>marklogic</id>
